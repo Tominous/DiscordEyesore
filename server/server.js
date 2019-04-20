@@ -48,7 +48,7 @@ function handleWSConnection(ws) {
     console.log("New client connected");
     return console.log("Connected: %d", wss.clients.length);
 
-    //return ws.send(Buffer.from([72, 101, 108, 108, 111]), {binary: true});
+    return ws.send(Buffer.from([72, 101, 108, 108, 111]), {binary: true});
 }
 
 function handleVCJoin(error, events) {
